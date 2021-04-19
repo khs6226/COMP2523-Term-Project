@@ -1,40 +1,20 @@
-Breakdown of Work:
+Breakdown of Work: still in progresss
 
-Example below:
-March 9th (First Sprint Complete)
-Amy Chan:
-I worked on the following tasks:
+Installation instructions:
+We have many but a few important dependencies are "passport", "ejs", "express"
 
-1. <Insert Some Task Here> - This task is responsible for xyz functionality.
-2. <Insert Some Task Here> - This task is responsible for xyz functionality.
-3. <Insert Some Task Here> - This task is responsible for xyz functionality.
 
-I also needed to research on Youtube and Google the following things:
+Features that are working:
 
-1. <Insert Video or Link to thing you needed to research>
 
-John Chen:
-I worked on the following tasks:
+Features that are missing:
 
-1. <Insert Some Task Here> - This task is responsible for xyz functionality.
-2. <Insert Some Task Here> - This task is responsible for xyz functionality.
-3. <Insert Some Task Here> - This task is responsible for xyz functionality.
 
-March 16th (Second Sprint Complete)
-Amy Chan:
-I worked on the following tasks:
 
-1. <Insert Some Task Here> - This task is responsible for xyz functionality.
-2. <Insert Some Task Here> - This task is responsible for xyz functionality.
-3. <Insert Some Task Here> - This task is responsible for xyz functionality.
+Contact Information:
+BCIT emails -
+Kya: cbam1@my.bcit.ca
+Hongsoon: hkim415@my.bcit.ca
+Adam: asiyala@my.bcit.ca
 
-I also needed to research on Youtube and Google the following things:
-
-1. <Insert Video or Link to thing you needed to research>
-
-John Chen:
-I worked on the following tasks:
-
-1. <Insert Some Task Here> - This task is responsible for xyz functionality.
-2. <Insert Some Task Here> - This task is responsible for xyz functionality.
-3. <Insert Some Task Here> - This task is responsible for xyz functionality.
+Explain what the project does:
