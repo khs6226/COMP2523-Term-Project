@@ -1,8 +1,8 @@
 import express, { Request, Response, NextFunction, Router } from "express";
 import IController from "../../../interfaces/controller.interface";
 import IPostService from "../services/IPostService";
-import Icomment from "../../../interfaces/comment.interface"
-import Ipost from "../../../interfaces/post.interface"
+import Icomment from "../../../interfaces/comment.interface";
+import Ipost from "../../../interfaces/post.interface";
 import { post, posts } from "../../../model/fakeDB";
 import { runInNewContext } from "vm";
 
@@ -24,16 +24,15 @@ class PostController implements IController {
   }
 
   // 🚀 This method should use your postService and pull from your actual fakeDB, not the temporary posts object
-  private getAllPosts = (req: express.Request, res: Response) => {
+  private getAllPosts = (req: express.Request, res: express.Response) => {
     const username = req.user;
-    res.render("post/views/posts", { posts: this.postService.getAllPosts(username), user:req.user });
-
+    res.render("post/views/posts", { posts: this.postService.getAllPosts(username), user: req.user });
   };
 
   // 🚀 This method should use your postService and pull from your actual fakeDB, not the temporary post object
   private getPostById = async (request: Request, res: Response, next: NextFunction) => {
     const posts = this.postService.findById(request.params.id);
-    res.render("post/views/post", { posts, user:request.user });
+    res.render("post/views/post", { post, user:request.user });
   };
 
   // 🚀 These post methods needs to be implemented by you
@@ -44,8 +43,9 @@ class PostController implements IController {
       userId: req.body.id,
       createdAt: new Date
     }
-    this.postService.addCommentToPost(comments, req.body.post)
+    this.postService.addCommentToPost(comments, req.body.post);
   };
+  
   private createPost = async (req: Request, res: Response, next: NextFunction) => {
     console.log("Hold on. A post is being created.");
     const user = req.user;
@@ -60,7 +60,6 @@ class PostController implements IController {
       reposts:0
     }
   };
-
 
   private deletePost = async (req: Request, res: Response, next: NextFunction) => {
     const deletePosts = req.body.postToDelete;
