@@ -46,7 +46,7 @@ class AuthenticationController implements IController {
   };
   private logout = async (req: express.Request, res: express.Response) => {
     req.logout();
-    res.redirect('auth/login');
+    res.redirect('/auth/login');
   };
 }
 
