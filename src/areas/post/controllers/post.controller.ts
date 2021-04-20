@@ -45,6 +45,7 @@ class PostController implements IController {
     }
     this.postService.addCommentToPost(comments, req.body.post);
   };
+  
   private createPost = async (req: Request, res: Response, next: NextFunction) => {
     console.log("Hold on. A post is being created.");
     const user = req.user;
@@ -59,6 +60,7 @@ class PostController implements IController {
       reposts:0
     }
   };
+
   private deletePost = async (req: Request, res: Response, next: NextFunction) => {
     const deletePosts = req.body.postToDelete;
     const posts = this.postService.getAllPosts(req.user)
